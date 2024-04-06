@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* Set your preferred background color (light cream) */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Set your preferred text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #6495ed; /* Set your preferred container background color (cobalt blue) */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff; /* Set your preferred heading color */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #fff; /* Set your preferred label text color */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc; /* Set your preferred input border color */
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px; /* Set the height for the textarea */
+        }
+
+        input[type="submit"] {
+            background-color: #007bff; /* Set your preferred button background color */
+            color: #fff; /* Set your preferred button text color */
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Set your preferred hover background color */
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 10px;
+            transition: transform 0.3s ease-in-out;
+            width: 150px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Donate Now</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="amount">Donation Amount (৳):</label> <!-- Changed the donation amount sign to "৳" (Taka sign) -->
+            <input type="number" id="amount" name="amount" min="1" step="any" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Donate Now">
+        </div>
+    </form>
+
+    <div class="payment-options">
+        <div class="card">
+            <p>Bkash: 01990005228</p>
+        </div>
+        <div class="card">
+            <p>Nagad: 01990005228</p>
+        </div>
+        <div class="card">
+            <p>Visa</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
